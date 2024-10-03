@@ -25,3 +25,9 @@ scanf("%d", &nomeDaVariavel);
 ```
 
 > No momento não será abordado do porque do "&" antes da variável no momento de leitura, mas é importante sempre colocá-lo.
+---
+
+Para declarar uma constante, use a diretiva #define no topo do código, logo abaixo do #include <stdio.h>
+```C
+#define NOME_DA_CONSTANTE valorDaVariavel
+```
