@@ -48,6 +48,11 @@ E para controlar a quantidade de casas decimais:
 printf("%.1f", nomeDaVariavel);
 ```
 
+Para printar uma variável que contém uma string:
+```C
+printf("%s", nomeDaVariavel);
+```
+
 Para ler uma variável:
 ```C
 scanf("%d", &nomeDaVariavel);
@@ -68,4 +73,12 @@ int main() {
     double pontos = (double)a / (double)b;
     printf("%f\n", pontos);
 }
+```
+---
+## Array
+Para declarar um array:
+```C
+int notas[10];
+
+// Um array de inteiros que armazena até 10 elementos
 ```
