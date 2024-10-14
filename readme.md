@@ -53,6 +53,11 @@ Para printar uma variável que contém uma string:
 printf("%s", nomeDaVariavel);
 ```
 
+Para printar uma variável que contém um char:
+```C
+printf("%c", nomeDaVariavel);
+```
+
 Para ler uma variável:
 ```C
 scanf("%d", &nomeDaVariavel);
