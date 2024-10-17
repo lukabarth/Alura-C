@@ -36,7 +36,7 @@ void desenhaForca() {
 
     for(int i = 0; i < strlen(palavraSecreta); i++) {
 
-        if(jachutou(palavraSecreta[i])) {
+        if(jaChutou(palavraSecreta[i])) {
             printf("%c ", palavraSecreta[i]);
         } else {
             printf("_ ");
@@ -47,7 +47,7 @@ void desenhaForca() {
 
 }
 
-void escolhepalavra() {
+void escolhePalavra() {
     sprintf(palavraSecreta, "MELANCIA");
 }
 
@@ -68,11 +68,11 @@ int main() {
     int enforcou = 0;
 
     abertura();
-    escolhepalavra();
+    escolhePalavra();
 
     do {
 
-        desenhaforca();
+        desenhaForca();
         chuta();
 
         tentativas++;
