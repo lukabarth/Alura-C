@@ -87,3 +87,38 @@ int notas[10];
 
 // Um array de inteiros que armazena até 10 elementos
 ```
+## Ponteiros
+Ponteiros são variáveis que armazenam o endereço de memória de outra variável. Em vez de guardar diretamente um valor, um ponteiro guarda a localização onde esse valor está armazenado na memória.
+
+Para declarar um ponteiro:
+```C
+int *ptr; // ponteiro para um inteiro
+```
+
+Para obter o endereço de uma variável:
+```C
+int var = 10;
+ptr = &var; // ptr agora aponta para var
+```
+
+Para acessar o valor da variável apontada pelo ponteiro:
+```C
+printf("%d", *ptr); // imprime o valor de var, ou seja, 10
+```
+
+**Exemplo com ponteiro:**
+```C
+#include <stdio.h>
+
+int main() {
+    int var = 10;   // declarando uma variável
+    int *ptr;       // declarando um ponteiro
+    
+    ptr = &var;     // ponteiro aponta para o endereço de var
+    
+    printf("Valor de var: %d\n", var);               // 10
+    printf("Endereço de var: %p\n", &var);           // endereço de var
+    printf("Valor armazenado no ponteiro: %p\n", ptr); // endereço de var
+    printf("Valor apontado pelo ponteiro: %d\n", *ptr); // 10 (conteúdo de var)
+}
+```
